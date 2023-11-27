@@ -1,0 +1,31 @@
+.form-container {
+    background-color: #cececea8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.form-label {
+    font-weight: bold;
+}
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.form-checkbox {
+    margin-right: 5px;
+}
+.form-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

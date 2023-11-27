@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaV - Rent a Veichle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ticket {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: left;
+            margin: 10px;
+            display: inline-block;
+            transition: transform .2s;
+        }
+        .ticket:hover{
+            transform: scale(1.1);
+        }
+        .ticket-img{
+            width: 380px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .news-date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .news-source {
+            font-size: 14px;
+            color: #888;
+        }
+        /* Hide additional tickets initially */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="news.html"><b>News</b></a>
+        <a href="models.html">Models</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <div class="color-picker">
+            <label for="colorPicker">Choose a color:</label>
+            <input type="color" id="colorPicker" onchange="changeColor(this.value)">
+        </div>
+    </div>
+
+    <div class="ticket" onclick="extendCard()">
+        <img class="ticket-img" src="https://hips.hearstapps.com/hmg-prod/images/santa-cruz-heckler-cc-e-bike-testing-0219-1623080534.jpg?" />
+        <h2>Exciting New Electric Bike Models Released</h2>
+        <p id="myElementId">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ex ut odio luctus cursus.</p>
+        <p class="news-date">Published: November 6, 2023</p>
+        <p class="news-source">Source: Electric Bike News</p>
+        <p align="center"><strong>Click for more!</strong></p>
+    </div>
+
+    <div class="ticket">
+        <img class="ticket-img" src="https://images.immediate.co.uk/production/volatile/sites/21/2022/07/Volt-London-01-65beb21.jpg" />
+        <h2>Benefits of Electric Bikes for Commuters</h2>
+        <p>Electric bikes are becoming a popular choice for daily commuters, providing an eco-friendly and efficient mode of transportation.</p>
+        <p class="news-date">Published: November 5, 2023</p>
+        <p class="news-source">Source: EcoTransport Weekly</p>
+    </div>
+
+    <div class="ticket">
+        <img class="ticket-img" src="https://hd-ebike.com/wp-content/uploads/2022/04/20220428-102651-1024x644.jpg" />
+        <h2>Top Electric Bike Accessories for Enthusiasts</h2>
+        <p>If you're passionate about electric bikes, these accessories are a must-have to enhance your riding experience.</p>
+        <p class="news-date">Published: November 4, 2023</p>
+        <p class="news-source">Source: Bike Enthusiast Magazine</p>
+    </div>
+
+    <div id="additionalTickets" class="hidden">
+
+    </div>
+
+    <div class="ticket" onclick="showMoreNews()">
+        <h1>Show more!</h1>
+        <h2>Click here</h2>
+    </div>
+
+
+    <button class="scroll-up-button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+    
+    <script src="../js/scrollUp.js"></script>
+    <script src="../js/backGroundChanger.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/createhtml.js"></script>
+</body>
+
+</html>

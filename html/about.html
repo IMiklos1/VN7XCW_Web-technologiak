@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaV - Rent a Veichle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .animated-card {
+            opacity: 0.6;
+            /* Initially, the card is hidden */
+            transition: opacity 0.5s;
+            /* Only opacity is animated */
+        }
+    </style>
+</head>
+
+<body style="height: 2000px;">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="models.html">Models</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html"><b>About</b></a>
+        <div class="color-picker">
+            <label for="colorPicker">Choose a color:</label>
+            <input type="color" id="colorPicker" onchange="changeColor(this.value)">
+        </div>
+    </div>
+    <section class="card animated-card">
+        <h2>Our Story</h2>
+        <p>At RaV, we believe that the future of transportation is electric. Our journey began when a group
+            of avid cyclists, nature enthusiasts, and sustainability advocates came together to create an accessible and
+            enjoyable way for people to experience the world on two wheels. Our e-bike rental company was born out of
+            the desire to share the thrill of electric biking and to make outdoor adventures more accessible to
+            everyone.</p>
+    </section>
+    <section class="card animated-card">
+        <h2>Our Mission</h2>
+        <p>Our mission is to offer a convenient and eco-conscious alternative to traditional transportation and promote
+            outdoor exploration. We are committed to:</p>
+        <ul>
+            <li>Reducing carbon emissions by providing electric bikes as a sustainable mode of transportation.</li>
+            <li>Promoting physical fitness and well-being through outdoor activities.</li>
+            <li>Encouraging people to reconnect with nature and appreciate the beauty of their surroundings.</li>
+            <li>Offering top-quality e-bikes for a memorable and enjoyable riding experience.</li>
+        </ul>
+    </section>
+    <section class="card animated-card">
+        <h2>Why Choose [Company Name] E-Bikes?</h2>
+        <ul>
+            <li><strong>High-Quality E-Bikes:</strong> We offer a fleet of well-maintained, top-of-the-line electric
+                bikes designed for comfort, durability, and performance.</li>
+            <li><strong>Eco-Friendly:</strong> Our e-bikes are emission-free, helping reduce your carbon footprint and
+                contributing to a cleaner planet.</li>
+            <li><strong>Convenience:</strong> Our easy online reservation system ensures you can rent an e-bike quickly
+                and efficiently, so you can spend more time exploring.</li>
+            <li><strong>Adventure Awaits:</strong> With our e-bikes, you can go farther, explore more, and access even
+                the most challenging terrains with ease.</li>
+            <li><strong>Expert Support:</strong> Our knowledgeable team is here to assist you with any questions and
+                provide tips for the best riding experience.</li>
+            <li><strong>Safety First:</strong> We prioritize your safety by providing helmets, locks, and maintenance
+                support.</li>
+        </ul>
+    </section>
+    <section class="card animated-card">
+        <h2>Locations</h2>
+        <p>[Company Name] operates in [List of Cities or Locations], making it convenient for locals and tourists alike
+            to enjoy our e-bike rentals and explore the beauty of these areas.</p>
+    </section>
+    <section class="card animated-card">
+        <h2>Contact Us</h2>
+        <p>We're excited to be a part of your adventure and look forward to helping you make lasting memories. Whether
+            you're a solo traveler, a group of friends, or a family, [Company Name] is here to provide you with an
+            unforgettable e-bike rental experience.</p>
+        <p>For inquiries or reservations, please feel free to contact us at [Phone Number] or <a
+                href="mailto:info@companyname.com">info@companyname.com</a>. You can also visit our rental stations at
+            the following locations:</p>
+        <address>
+            <p>[Location 1 Address]</p>
+            <p>[Location 2 Address]</p>
+            <p>[Location 3 Address]</p>
+        </address>
+    </section>
+
+    <button class="scroll-up-button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+    
+    <script src="../js/scrollUp.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/backGroundChanger.js"></script>
+</body>
+
+</html>
